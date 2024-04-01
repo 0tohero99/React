@@ -1,0 +1,34 @@
+=============class1=======================
+NPM
+> Node Package manager
+(Registory)
+
+ Open Source
+(Any Body can contribute)
+
+package.json
+> Entry point to the app
+> command (start,build,test)
+> contains meta data(name,version,decription)
+> packages required for app
+
+///Step to generate package.json
+**NodeJs must be installed
+> open cmd/terminal and go inside the folder
+> npm init
+> answer all question
+> type "yes"
+
+
+///Step to install package
+**NodeJs must be installed
+> open cmd/terminal and go inside the folder
+> npm i packagename / npm install packagename
+
+package-lock > Dependecy tree
+.gitignore > Avoid pushing to git
+==============cls2====================== 
+
+
+
+///sahir//

@@ -1,0 +1,96 @@
+=============class1=======================
+NPM
+> Node Package manager
+(Registory)
+
+ Open Source
+(Any Body can contribute)
+
+package.json
+> Entry point to the app
+> command (start,build,test)
+> contains meta data(name,version,decription)
+> packages required for app
+
+///Step to generate package.json
+**NodeJs must be installed
+> open cmd/terminal and go inside the folder
+> npm init
+> answer all question
+> type "yes"
+
+
+///Step to install package
+**NodeJs must be installed
+> open cmd/terminal and go inside the folder
+> npm i packagename / npm install packagename
+
+package-lock > Dependecy tree
+.gitignore > Avoid pushing to git
+==============cls2====================== 
+local
+> Local to the folder
+> Can only be used inside one application
+> npm i packagename
+dev
+> Local to the folder 
+> Can only be used inside one application
+> Only those dependency which are required at the time of development
+like testing
+> npm i packagename --save-dev
+
+global
+> Local to laptop
+> will not added in packages.json
+> can only be use to start run thing outside the app
+> Admin access to install
+
+
+/////Step to install global dependency
+# Win
+> open cmd as admin
+> npm i -g packagename
+
+
+# Mac/linux
+> open terminal
+> sudo npm i -g packagename
+
+////Step to generate react app
+# One Time Step
+> open cmd as admin
+> npm i -g create-react-app
+
+# Every time we need new app
+> Open cmd
+> go inside folder where we want app
+> create-react-app appname
+
+# One Step
+> npx create-react-app appname
+
+
+React > Main package of the application
+React-Script > Help to run the application
+React-DOM > To render the content
+
+Class Component
+> Heavy as compare to functional
+> Can maintain state and have lifecycle
+> Logical Component
+
+Functional Component
+> Dumb component
+> Only use for display purpose
+
+
+Functional Component with hooks
+> All this which class and
+functional component can do
+=================cls3=============
+synthytic based event: after typings one even got fire that can be received.
+
+
+
+
+//sahir//
