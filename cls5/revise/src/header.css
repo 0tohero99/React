@@ -1,0 +1,32 @@
+header {
+    background-color: green;
+    text-align: center;
+}
+
+input {
+    box-shadow: 0 0 1px 1px lightgreen;
+    height: 23px;
+    border-radius: 3px;
+    border: none;
+    background-color: lightgreen;
+    margin-bottom: 13px;
+}
+.main{
+    width: 90%;
+    margin-left:7% ;
+    display: inline-block;
+    background-color: rgb(204, 227, 235);
+}
+.cards{
+    float: left;
+    height: 300px;
+    border-radius: 1px;
+    width: 25%;
+    margin: 23px 13px 13px 30px;
+    box-shadow: 0 0 1px 5px whitesmoke;
+}
+.cards>img{
+    height: 200px;
+    border-radius: 1px;
+    width: 100%;
+ }

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Headers from "./headers";
+import Footer from "./footers";
+import Content from "./contents";
+import JSON from "./data.json"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const AppComponent = ()=>{
+    const [allcontent,setallcontent] = useState(JSON) 
+
+
+   const onsearch = (text) => {
+        let searchdata = allcontent.filter((data) => {
+            return data.name.toLowerCase().indexOf(text.toLowerCase()) >-1
+
+        })
+        setallcontent(searchdata)
+    }
+    return (
+        <>
+            <Headers searchselect={(data)=>{onsearch(data)}} />
+            <Content content={allcontent} />
+            <Footer year="2024" />
+        </>
+    )
 }
-
-export default App;
+ 
+export default AppComponent;

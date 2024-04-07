@@ -1,5 +1,6 @@
 import React from 'react';
 import "./products.css";
+
 const allItems = (props) => {
     //1:17 hr//
     const randerProducts = props.Items.map((items) => {
