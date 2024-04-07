@@ -114,5 +114,30 @@ Axios js is a promise-based HTTP library that lets you consume an API service. I
        
 (get) restaurants>         http://3.17.216.66:4000/restaurants
 
+ https://i.ibb.co/fpD01Yf/table-full-homemade-food-600nw-350705489.webp
+ https://i.ibb.co/5cJMbGz/table-full-various-fresh-food-600nw-2253583819.webp
 
+ flow is :constructor >render >componentdidmount| 
+                = api calling on page loads:
+                = componentDidMount(){}
+                = how we call api?
+                = fetch /axios .
+                note: fetch is the native mathod in js to call api's|
+                Native methods are typically used to perform common tasks, such as manipulating strings, numbers, and arrays. Some examples of native methods include:
+                    String.prototype.split(): Splits a string into an array of strings.
+                    Array.prototype.push(): Adds an element to the end of an array.
+                    Math.max(): Returns the maximum value of two or more numbers.
+
+                                        // Split a string into an array of strings
+                    const words = "Hello, world!".split(" ");
+
+                    // Add an element to the end of an array
+                    words.push("!");
+
+                    // Return the maximum value of two or more numbers
+                    const max = Math.max(1, 2, 3);
+
+                    // Print the results
+                    console.log(words); // ["Hello", "world!", "!"]
+                    console.log(max); // 3
 //sahir//
