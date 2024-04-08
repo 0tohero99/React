@@ -9,7 +9,39 @@ class Search extends Component {
         console.log("inside constructor")
         super()
         this.state = {
-            Location: ""
+            Location: "",
+            Restaurent: ""
+        }
+    }
+
+    randercity = (data) => {
+        // console.log("connencting", data);
+        if (data) {
+            return data.map((items) => {
+                return (
+                    <option value={items.state_id} key={items._id}>{items.state}</option>
+                )
+            })
+        }
+    }
+    //http://3.17.216.66:4000/restaurant?stateId=1
+    handlecity = (event) => {
+        console.log(event.target.value);
+        let stateId = event.target.value;
+        fetch(`${base_url}/restaurant?stateId=${stateId}`)
+            .then((res) => res.json())
+            .then((data) => {
+                // console.log(data);
+                this.setState({ Restaurent: data })
+            })
+    }
+    renderrestaurant = (data) => {
+        if (data) {
+            return data.map((items) => {
+                return (
+                    <option value={items.restaurant__id} key={items._id}>{items.restaurant_name} | {items.address}</option>
+                )
+            })
         }
     }
     render() {
@@ -24,11 +56,13 @@ class Search extends Component {
                     Search Place Near To You
                 </div>
                 <div id="dropdown">
-                    <select>
-                        <option value="" disabled selected>---Select City---</option>
+                    <select onChange={this.handlecity}>
+                        <option>---Select City---</option>
+                        {this.randercity(this.state.Location)}
                     </select>
                     <select className="restSelect">
-                        <option value=""  >---Select Restaurent---</option>
+                        <option>---Select Restaurent---</option>
+                        {this.renderrestaurant(this.state.Restaurent)}
                     </select>
                 </div>
             </div>
@@ -42,14 +76,18 @@ class Search extends Component {
 
     //  api calling on page loads: 
     componentDidMount() {
+        // http://3.17.216.66:4000/location
         console.log("inside componentDidMount")
-
         //  calling api's.
-        fetch(`${base_url}/location`, { method: 'GET' })
+        fetch(`${base_url}/location`, { method: "GET" })
             //returning promises.
             .then((res) => (res.json()))
             //returning data.
-            .then((data) =>console.log(data))
+            .then((data) => {
+                console.log(data);
+                this.setState({ Location: data });
+            })
+
             .catch((err) => {
                 console.error(err);
             })
