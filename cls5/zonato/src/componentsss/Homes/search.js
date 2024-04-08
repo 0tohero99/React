@@ -87,7 +87,6 @@ class Search extends Component {
                 console.log(data);
                 this.setState({ Location: data });
             })
-
             .catch((err) => {
                 console.error(err);
             })
