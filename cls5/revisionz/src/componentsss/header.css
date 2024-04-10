@@ -1,0 +1,33 @@
+body{
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+/* Header Css */
+header{
+    height:53px;
+    /* border:5px solid red; */
+    background-color: #3b2632;
+}
+
+#brand{
+    color:white;
+    font-size:30px;
+    float:left;
+    margin-top:1%;
+    margin-left:2%;
+    
+}
+
+#social{
+    float:right;
+    margin-top:12px;
+    margin-right:1%;
+}
+
+.socialIcon{
+    height:30px;
+    width:30px;
+
+}
