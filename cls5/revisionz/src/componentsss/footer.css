@@ -14,7 +14,8 @@ ul{
     width:33%;
     float: left;
     border-right: 1px solid white;
-}
+    background-color: #3b2632;
+ }
 
 .noBorder{
     border:none

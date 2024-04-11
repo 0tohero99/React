@@ -1,15 +1,17 @@
-import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import Header from "./header";
-import Footer from "./footer";
-import Home from "./Homes/home"
-const Routing = () => {
+import React from 'react'
+import { BrowserRouter, Route,   } from "react-router-dom";
+import Header from "./header.js";
+import Footer from "./footer.js";
+import Homes from "./Homes/home.js";
+
+const routing = () => {
     return (
         <BrowserRouter>
             <Header />
-            <Route path="/" component={Home} />
+                <Route path="/" component={Homes}/>
             <Footer />
         </BrowserRouter>
     )
 }
-export default Routing;
+
+export default routing

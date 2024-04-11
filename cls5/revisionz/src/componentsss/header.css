@@ -15,8 +15,7 @@ header{
     color:white;
     font-size:30px;
     float:left;
-    margin-top:1%;
-    margin-left:2%;
+    margin-top: 9px;
     
 }
 
@@ -28,6 +27,7 @@ header{
 
 .socialIcon{
     height:30px;
+    border-radius: 7px;
     width:30px;
-
+    margin-left: 7px;
 }
