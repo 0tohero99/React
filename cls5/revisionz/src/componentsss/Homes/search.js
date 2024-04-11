@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import "./search.css";
 
-const base_url = process.env.REACT_APP_Base_url;
-
+const base_url = process.env.REACT_APP_CITY_URL;
 class search extends Component {
   constructor() {
     console.log("constructor");
     super()
     this.state = {
       Location: " "
-    };
+    }
   }
   render() {
     console.log("render");
@@ -30,11 +29,15 @@ class search extends Component {
             <option>---Select  Restaurent---</option>
           </select>
         </div>
-
-       
       </div>
     )
   }
-}
+  componentDidMount() {
+    console.log("componentDidMount");
+    fetch(`${base_url}/location`, { method: "GET" })
+      .then((res) => console.log(res.json()))
+      .then((data) => console.log(data))
 
+  }
+}
 export default search;
