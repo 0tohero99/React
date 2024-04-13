@@ -11,14 +11,14 @@ class search extends Component {
     }
   }
   randerstate = (data) => {
-    // console.log("rendering",data);
-    if (data) {
-      return data.map((items) => {
-        return (
-          <option value={items.state_id} key={items._id}>{items.state}</option>
-        )
-      })
-    }
+    console.log("rendering",data);
+    // if (data) {
+    //   return data.map((items) => {
+    //     return (
+    //       <option value={items.state_id} key={items._id}>{items.state}</option>
+    //     )
+    //   })
+    // }
   }
   render() {
     console.log("render>>>");

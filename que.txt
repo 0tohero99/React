@@ -47,3 +47,4 @@ why css not working in zonato.
 // export default Apps;
 ---------------------------------------------
  zonatoz =data.map is not afunction.
+ after searching why header have to refresh.
