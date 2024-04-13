@@ -1,20 +1,21 @@
 import React from 'react'
 import "./header.css";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
  const Header = () => {
 
   return (
     <header>
       <div id="brand">New Learner !</div>
       <div id="social">
-        <a href="#">
+        <Link href="#">
           <img src="https://i.ibb.co/WHnC6VW/download.png"alt='yt' className='socialIcon' />
-        </a>
-        <a href="#">
+        </Link>
+        <Link href="#">
           <img src="https://i.ibb.co/6mZHctV/fb.png" alt='fb'  className='socialIcon'/> 
-        </a>
-        <a href="#">
+        </Link>
+        <Link href="#">
           <img src="https://i.ibb.co/QcP9KMZ/insta.jpg" alt='inta'  className='socialIcon'/> 
-        </a>
+        </Link>
       </div>
     </header>
   )

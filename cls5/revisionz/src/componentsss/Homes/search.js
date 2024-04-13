@@ -10,8 +10,18 @@ class search extends Component {
       Location: " "
     }
   }
+  randerstate = (data) => {
+    // console.log("rendering",data);
+    if (data) {
+      return data.map((items) => {
+        return (
+          <option value={items.state_id} key={items._id}>{items.state}</option>
+        )
+      })
+    }
+  }
   render() {
-    console.log("render");
+    console.log("render>>>");
 
     return (
       <div className='search'>
@@ -24,6 +34,7 @@ class search extends Component {
         <div id="dropdown">
           <select>
             <option>---Select City---</option>
+            {this.randerstate(this.state.Location)}
           </select>
           <select className='restSelect'>
             <option>---Select  Restaurent---</option>
@@ -33,11 +44,12 @@ class search extends Component {
     )
   }
   componentDidMount() {
-    console.log("componentDidMount");
-    fetch(`${base_url}/location`, { method: "GET" })
-      .then((res) => console.log(res.json()))
-      .then((data) => console.log(data))
-
+    fetch(`${base_url}/location`, { method: 'GET' })
+      .then((response) => (response.json()))
+      .then((data) => {
+        // console.log(data)
+        this.setState({ Location: data })
+      })
   }
 }
 export default search;

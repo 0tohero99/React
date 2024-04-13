@@ -25,15 +25,15 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="socialFoot">
-                <Link href="#">
+                <Link to="#">
                     <img src="https://i.ibb.co/TTp516h/facebook.png" alt="fb"
                         className="socialIcon" />
                 </Link>
-                <Link href="#">
+                <Link to="#">
                     <img src="https://i.ibb.co/w0kZ5Hf/insta.png" alt="fb"
                         className="socialIcon" />
                 </Link>
-                <Link href="#">
+                <Link to="#">
                     <img src="https://i.ibb.co/4jxsYSP/yt3.png" alt="fb"
                         className="socialIcon" />
                 </Link>
