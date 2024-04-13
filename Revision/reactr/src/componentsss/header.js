@@ -5,7 +5,7 @@ class Header extends Component {
         super()
         this.state = {
             headertext: "React",
-            search: "Search here !"
+            search: "  Search here !"
         }
     }
     handlechange = (event) => {
