@@ -1,0 +1,14 @@
+header {
+    background-color: "green";
+    text-align: "center";
+}
+
+input {
+    border: "none";
+    height: "23px";
+    border-radius: "5px";
+    background-color: "lightgreen";
+}
+Link{
+    text-decoration: none;
+}
