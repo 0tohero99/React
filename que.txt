@@ -4,46 +4,6 @@
  how foto hover on tiv. 
  why content not visible in routing.
  github
-why css not working in zonato.
- Anurag: 1/4/2024/ 04:30//
- usestate: not clear
- ----------------------------------
  
-// import React, { useState, useEffect } from 'react';
-// import Header from './header';
-// import Footer from './footer';
-// import Products from './products';
-// import data from './data.json';
-
-// const Apps = () => {
-//   const [items, setItems] = useState(data);
-//   const [searchTerm, setSearchTerm] = useState('');
-
-//   const filterData = (divsearch) => {
-//     setSearchTerm(divsearch.toLowerCase());
-//   };
-
-
-//   useEffect(() => {
-//     if (!searchTerm) {
-//       setItems(data);
-//       return;
-//     }
-//     const filteredItems = data.filter((item) =>
-//       item.name.toLowerCase().includes(searchTerm)
-//     );
-//     setItems(filteredItems);
-//   }, [searchTerm]);
-//   console.log(items)
-//   return (
-//     <>
-//       <Header getSearch={filterData} />
-//       <Products allItems={items} />
-//       <Footer year="2024" />
-//     </>
-//   );
-// };
-
-// export default Apps;
----------------------------------------------
+ ----------------------------------filter--------------------------------
   

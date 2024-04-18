@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.containers {
+    /* border: 1px solid green; */
+    width: 80%;
+    margin-left: 13%;
+    display: inline-block;
+}
+
+.box {
+    float: left;
+    height: 300px;
+    box-shadow: 0 0 1px 3px azure;
+    border-radius: 7px;
+    margin: 3%;
+    /* border: 1px solid green; */
+    width: 25%;
+}
+
+.box>img {
+    height: 200px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+}
